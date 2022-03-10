@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style/style.css">
-    <script type="text/javascript" src="/assets/hangman.js"></script>
     <title>HangManGame</title>
 </head>
 <body>
@@ -17,50 +16,61 @@
         <div class="hang">
             <img src="/assets/Image/hangman.png" alt="branche">
         </div>
-        <div id="vie" >
-            <img src="/assets/Image/heart.png" alt="">
-            <img src="/assets/Image/heart.png" alt="">
-            <img src="/assets/Image/heart.png" alt="">
+        <div id="stickman" >
+            <svg height="250" width="200" class="figure-content">
+                <!-- head -->
+                <circle cx="140" cy="70" r="20" class="figure-part" />
+        
+                <!-- body -->
+                <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
+        
+                <!-- arms -->
+                <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
+                <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
+        
+                <!-- legs -->
+                <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
+                <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
+            </svg>
         </div>
-        <div id="champ">
-            <span class="letter"></span>
-            <span class="letter"></span>
-            <span class="letter"></span>
-            <span class="letter"></span>
-            <span class="letter"></span>
-            <span class="letter"></span>
-            <span class="letter"></span>
-            <span class="letter"></span>
-            <span class="letter"></span>
+        <div id="word">
+            <input type="text" id="word" value="______" disabled />
+        </div>
+        <div class="wrongWord" >
+            
+        </div>
+        <div class="rightWord" >
+            
         </div>
     </section>
     <section id="keybord"> 
-        <button class="ligne1">A</button>
-        <button class="ligne1">B</button>
-        <button class="ligne1">C</button>
-        <button class="ligne1">D</button>
-        <button class="ligne1">E</button>
-        <button class="ligne1">F</button>
-        <button class="ligne1">G</button>
-        <button class="ligne1">H</button>
-        <button class="ligne1">I</button>
-        <button class="ligne1">J</button>
-        <button class="ligne1">K</button>
-        <button class="ligne1">L</button>
-        <button class="ligne1">M</button>
-        <button class="ligne1">N</button>
-        <button class="ligne1">O</button>
-        <button class="ligne2">P</button>
-        <button class="ligne2">Q</button>
-        <button class="ligne2">R</button>
-        <button class="ligne2">S</button>
-        <button class="ligne2">T</button>
-        <button class="ligne2">U</button>
-        <button class="ligne2">V</button>
-        <button class="ligne2">W</button>
-        <button class="ligne2">X</button>
-        <button class="ligne2">Y</button>
-        <button class="ligne2">Z</button>
+		<input type="button" value="A" class="alphabet"/>
+        <input type="button" value="B" class="alphabet"/>
+        <input type="button" value="C" class="alphabet"/>
+        <input type="button" value="D" class="alphabet"/>
+        <input type="button" value="E" class="alphabet"/>
+        <input type="button" value="F" class="alphabet"/>
+        <input type="button" value="G" class="alphabet"/>
+        <input type="button" value="H" class="alphabet"/>
+        <input type="button" value="I" class="alphabet"/>
+        <input type="button" value="J" class="alphabet"/>
+        <input type="button" value="K" class="alphabet"/>
+        <input type="button" value="L" class="alphabet2"/>
+        <input type="button" value="M" class="alphabet2"/>
+        <input type="button" value="N" class="alphabet2"/>
+        <input type="button" value="O" class="alphabet2"/>
+        <input type="button" value="P" class="alphabet2"/>
+        <input type="button" value="Q" class="alphabet2"/>
+        <input type="button" value="R" class="alphabet2"/>
+        <input type="button" value="S" class="alphabet2"/>
+        <input type="button" value="T" class="alphabet2"/>
+        <input type="button" value="U" class="alphabet2"/>
+        <input type="button" value="V" class="alphabet2"/>
+        <input type="button" value="W" class="alphabet2"/>
+        <input type="button" value="X" class="alphabet2"/>
+        <input type="button" value="Y" class="alphabet2"/>
+        <input type="button" value="Z" class="alphabet2"/>
     </section>
+ <script src="/assets/hangman.js"></script>
 </body>
 </html>
